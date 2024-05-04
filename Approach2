@@ -1,0 +1,31 @@
+package approach2;
+
+public class static2 {
+	
+	String girl="snigdha";
+	static String boy="prakash";
+	
+	void display() {
+		System.out.println("good girl");
+	}
+	static String display1() {
+		System.out.println("bad boy");
+		return "child";
+	}
+	
+}
+public class approach2c {
+
+	public static void main(String[] args) {
+		
+		static2 s1=new static2();
+
+		System.out.println(s1.girl);
+
+		s1.display();
+
+		System.out.println(static2.boy);
+	}
+
+}
+
