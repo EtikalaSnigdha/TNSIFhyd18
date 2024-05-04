@@ -1,0 +1,23 @@
+package approach1;
+
+public class approach1cls {
+	String batsman="virat";
+	static String bowler="shami";
+	void display() {
+		System.out.println("cricket");
+	}
+	static String display1() {
+		System.out.println("snigdha");
+		return "String";
+	}
+	public static void main(String[] args) {
+		approach1cls a1=new approach1cls();
+		System.out.println(a1.batsman);
+		a1.display();
+		System.out.println(approach1cls.bowler);
+	    approach1cls.display1();
+		// TODO Auto-generated method stub
+
+	}
+
+}
