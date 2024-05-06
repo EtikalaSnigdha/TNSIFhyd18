@@ -1,0 +1,33 @@
+package oop.polymorphism;
+
+public class overload {
+	// method without parameter
+		  public void display() {
+		    for (int i = 0; i < 10; i++) {
+		      System.out.print("diff parameters,return type and same method names");
+		    }
+		  }
+
+		  // method with single parameter
+		  public void display(char symbol) {
+		    for (int i = 0; i < 10; i++) {
+		      System.out.print(symbol);
+		    }
+		  }
+	
+
+}
+public class overloadmain {
+
+	public static void main(String[] args) {
+		overload m1 = new overload();
+		m1.display();
+		
+		System.out.println("\n");
+		
+		m1.display('$');
+
+	}
+
+}
+
