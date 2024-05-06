@@ -1,0 +1,23 @@
+package oop.polymorphism;
+
+public class Poly extends Polymorphism {
+	@Override
+	  public void displayInfo() {
+	    System.out.println("Poly means many");
+	  }
+
+}
+public class PolyMain {
+
+	public static void main(String[] args) {
+		
+			Polymorphism p1 = new Polymorphism();
+			p1.displayInfo();
+			
+			Poly p2 = new Poly();
+			p2.displayInfo();
+		}
+		
+	}
+
+
