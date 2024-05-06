@@ -1,0 +1,19 @@
+package singlelevel;
+
+public class child extends Parent {
+	public void methodB() {
+		System.out.println("single inheritance");
+	}
+	public static void main(String args[]) {
+		child c1=new child();
+		c1.methodA();
+		c1.methodB();
+	}
+
+}
+public class Parent {
+	public void methodA() {
+		System.out.println("snigdha's laptop");
+	}
+
+}
