@@ -1,0 +1,32 @@
+package multilevel;
+
+public class Animal {
+	void eat() {
+		System.out.println("eating");
+	}
+
+}
+package multilevel;
+
+public class dog extends Animal {
+	void bark() {
+		System.out.println("barking");
+	}
+}
+public class babydog extends dog {
+	void weep() {
+		System.out.println("weeping");
+	}
+
+}
+public class Testinheritance2 {
+
+	public static void main(String[] args) {
+		babydog bd=new babydog();
+		bd.weep();
+		bd.bark();
+		bd.eat();
+		 
+	}
+
+}
