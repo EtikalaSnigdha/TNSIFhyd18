@@ -1,10 +1,18 @@
 package oop.polymorphism;
+public class Polymorphism {
+	public void displayInfo() {
+	    System.out.println("Here same parameters ,name ,return type");
+	  }
+
+}
+
 
 public class Poly extends Polymorphism {
 	@Override
 	  public void displayInfo() {
 	    System.out.println("Poly means many");
 	  }
+
 
 }
 public class PolyMain {
