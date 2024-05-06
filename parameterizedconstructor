@@ -1,0 +1,40 @@
+package constructor;
+
+public class Car2parametrized {
+	private String doors;
+	private String engine;
+	private String driver;
+	private int speed;
+ 
+	//Parameterized constructor
+	public Car2parametrized(String doors, String engine, String driver, int speed) {
+		this.doors = doors;
+		this.engine = engine;
+		this.driver = driver;
+		this.speed = speed;
+	}
+ 
+	public String run() {
+		if(doors.equals("closed") && engine.equals("on")&& driver.equals("seated") 
+				&& speed >0) {
+			return "car is running";
+		}else {
+			return "car is not running";
+		}
+	}
+
+}
+
+
+
+public class Car2Main {
+
+	public static void main(String[] args) {
+		
+           Car2parametrized c2 = new Car2parametrized("closed"	, "on", "seated", 10);
+		
+		System.out.println(c2.run());
+
+	}
+
+}
