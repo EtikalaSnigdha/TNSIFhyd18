@@ -1,0 +1,38 @@
+package hybridlevel;
+
+public class class1 {
+	void students() {
+		System.out.println("lazy");
+	}
+
+}
+public class class2 extends class1 {
+	void child() {
+		System.out.println("active");
+	}
+
+}
+public class class3 extends class2 {
+	void teacher() {
+		System.out.println("teaching");
+	}
+
+}
+public class class4 {
+	void noteacher() {
+		System.out.println("sleeping");
+	}
+
+}
+public class testlevel4 {
+
+	public static void main(String[] args) {
+		class3 c=new class3();
+		c.child();
+		c.students();
+		c.teacher();
+		//c.noteacher();
+
+	}
+
+}
